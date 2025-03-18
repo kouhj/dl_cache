@@ -12,3 +12,11 @@ The main branch only provides the README.
 
 ## Architecture-specific branches
 Source archives are saved to the architecture-specific branches seprarately. These files are maintained by the dl_cache workflow action of the kouhj/openwrt_builder repo.
+
+## Add a new architecutre
+Run the following to manually create a branch for the NEW_ARCH architecture with an empty folder. Adding files is then performed by the dl_cache workflow action of the kouhj/openwrt_builder repo.
+```
+git checkout TEMPLATE_FOR_NEW_ARCH
+git checkout -b <NEW_ARCH>
+git push --all origin
+```
